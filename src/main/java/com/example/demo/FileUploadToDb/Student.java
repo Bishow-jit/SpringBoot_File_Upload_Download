@@ -1,4 +1,4 @@
-package com.example.demo.Student;
+package com.example.demo.FileUploadToDb;
 
 import jakarta.persistence.*;
 import lombok.Data;

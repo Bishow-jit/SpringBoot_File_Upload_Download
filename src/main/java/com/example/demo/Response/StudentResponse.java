@@ -1,6 +1,6 @@
 package com.example.demo.Response;
 
-import com.example.demo.Student.Student;
+import com.example.demo.FileUploadToDb.Student;
 import lombok.Data;
 
 @Data

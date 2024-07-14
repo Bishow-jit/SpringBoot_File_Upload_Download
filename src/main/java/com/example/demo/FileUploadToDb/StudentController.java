@@ -1,4 +1,4 @@
-package com.example.demo.Student;
+package com.example.demo.FileUploadToDb;
 
 import com.example.demo.Response.StudentResponse;
 import org.springframework.beans.factory.annotation.Autowired;

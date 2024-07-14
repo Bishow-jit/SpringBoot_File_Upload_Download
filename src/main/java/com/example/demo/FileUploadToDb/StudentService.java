@@ -1,4 +1,4 @@
-package com.example.demo.Student;
+package com.example.demo.FileUploadToDb;
 
 import com.example.demo.Response.StudentResponse;
 import com.example.demo.Util.ImageUtils;
@@ -84,12 +84,5 @@ public class StudentService implements IStudent {
         return null;
     }
 
-    @Override
-    public Student getImageNameById(Long id) {
-        if (id != null) {
-            Optional<Student> student = studentRepository.findById(id);
-            return student.orElseGet(Student::new);
-        }
-        return null;
-    }
+
 }
