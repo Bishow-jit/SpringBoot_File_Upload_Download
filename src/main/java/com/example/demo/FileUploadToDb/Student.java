@@ -1,16 +1,14 @@
 package com.example.demo.FileUploadToDb;
 
+import com.example.demo.Auditing.BaseModel;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Table(name = "student_tbl")
 @Data
-public class Student {
+public class Student extends BaseModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     @Column(name = "student_name")
     private String name;

@@ -1,6 +1,7 @@
 package com.example.demo.FileUploadToFileSystem;
 
 
+import com.example.demo.Auditing.BaseModel;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,11 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class FileData {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class FileData extends BaseModel {
 
     private String fileName;
 
