@@ -10,7 +10,10 @@ import java.util.Optional;
 @Repository
 public interface FileDataRepository extends JpaRepository<FileData,Long> {
 
-    Optional<FileData> findByFileName(String fileName);
+//    Optional<FileData> findByFileName(String fileName);
+
+    @Query(value = "SELECT * FROM file_data WHERE file_name=:fileName",nativeQuery = true)
+    Optional<FileData> findByName(String fileName);
 
 
 }

@@ -38,7 +38,7 @@ public class FileDataService implements IFileUploadToFileSystem {
     @Override
     public FileDataResponse downloadFromFileSystem(String fileName) throws IOException {
         if(fileName != null && !fileName.isEmpty()){
-            Optional<FileData> fileData = fileDataRepository.findByFileName(fileName);
+            Optional<FileData> fileData = fileDataRepository.findByName(fileName);
             if (fileData.isPresent()) {
                 byte[] fileBytes = Files.readAllBytes(new File(fileData.get().getFilePath()).toPath());
                 FileDataResponse fileDataResponse = new FileDataResponse();
