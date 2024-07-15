@@ -63,12 +63,11 @@ public class StudentService implements IStudent {
             student.setImageName(multipartFile.getOriginalFilename());
             student.setImageType(multipartFile.getContentType());
             studentRepository.save(student);
-            return "Successful uploaded file named" + multipartFile.getOriginalFilename();
+            return "Successful Uploaded File Named: " + multipartFile.getOriginalFilename();
         } catch (Exception e) {
             e.printStackTrace();
-            return "Failed";
+            return "Failed To Upload File";
         }
-
     }
 
     @Override
