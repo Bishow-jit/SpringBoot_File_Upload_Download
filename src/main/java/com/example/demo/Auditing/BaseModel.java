@@ -32,7 +32,7 @@ public class BaseModel {
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    protected Date createdDate;
+    protected LocalDateTime createdDate;
 
     @LastModifiedBy
     protected String lastModifiedBy;
@@ -40,7 +40,7 @@ public class BaseModel {
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    protected Date lastModifiedDate;
+    protected LocalDateTime lastModifiedDate;
 
     protected Boolean active;
 
