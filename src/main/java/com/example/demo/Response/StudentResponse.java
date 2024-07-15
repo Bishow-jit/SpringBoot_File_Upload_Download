@@ -6,6 +6,5 @@ import lombok.Data;
 @Data
 public class StudentResponse {
     private Student student;
-
     private byte[] imageData;
 }
